@@ -4,3 +4,4 @@ python3 -m venv .venv
 python -m pip install -r requirements.txt
 python download_runner.py 
 deactivate
+rm -rf .venv
