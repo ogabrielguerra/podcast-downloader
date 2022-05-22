@@ -59,7 +59,7 @@ class PodcastDownloader:
         for url in self.__files_path:
             
             name = self.get_name(url)
-        
+
             response = requests.get(url, allow_redirects=True)
-            open(, 'wb').write(response.content)
+            open(self.__TARGET_DIR + '/' + self.__SHOW_TITLE + '/' + name, 'wb').write(response.content)
             print(Back.GREEN + f"File {url}")
